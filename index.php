@@ -16,10 +16,12 @@
     <div class="container ">
         <div class="col-auto bg-primary">
                 <center><h3>LOG IN</h3></center>
-            </div>
-            <br>
+        </div>
+    </div>
+    <br>
 </head>
 <body>
+    <header>
 
     <?php if (isset($_SESSION['success'])) : ?>
         <div class="success">
@@ -39,22 +41,22 @@
     <?php endif; 
     ?>
     <form action="login.php" method="post">
-    <div class="row mb-3 mt-3 fs-4">
-                    <label for="username" class="col-sm-2 col-form-label">ชื่อผู้ใช้</label>
-                    <div class="col-6">
-            <input type="text" name="username"class="form-control" placeholder="กรุณากรอกชื่อผู้ใช้"required>
-            </div>
-            </div>
-        <br>
         <div class="row mb-3 mt-3 fs-4">
-        <label for="password"class="col-sm-2 col-form-label">รหัสผ่าน</label>
+            <h4><label for="username" class="col-sm-2 col-form-label">ชื่อผู้ใช้</label></h4>
         <div class="col-6">
-        <input type="password" name="password"class="form-control" placeholder="กรุณากรอกรหัสผ่าน" required>
+        <center><input type="text" name="username"class="form-control" placeholder="กรุณากรอกชื่อผู้ใช้"required></center>
             </div>
+        </div>
+            <br>
+        <div class="row mb-3 mt-3 fs-4">
+            <h4><label for="password"class="col-sm-2 col-form-label" >รหัสผ่าน</label></h4>
+        <div class="col-6">
+        <center><input type="password" name="password"class="form-control" placeholder="กรุณากรอกรหัสผ่าน" required>
             </div>
+        </div>
         <br>
         <div class="col-auto">
-        <input type="submit" class="btn btn-primary bg-color#danger" name="submit" value="Login">
+        <input type="submit" class="btn btn-primary " name="submit" value="Login">
         </div>
     </form>
     <br>

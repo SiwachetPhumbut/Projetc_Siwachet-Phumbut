@@ -128,6 +128,6 @@ if(isset($_POST) && !empty($_POST)){
                 </form>
 
 <br>
-        <a href="index.php">กลับสู่ หน้า Login</a>   
+<center><h3><p><a href="home.php">หน้าหลัก</a></p</h3><center>
 </body>
 </html>

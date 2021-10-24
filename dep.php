@@ -66,7 +66,7 @@
                             </div>
                             </div>
                         <div class="row mb-3 mt-3 fs-4">
-                    <label for="name_dep" class="col-sm-2 col-form-label">รหัสพนักงาน</label>
+                    <label for="name_dep" class="col-sm-2 col-form-label">ชื่อแผนก</label>
                         <div class="col-6">
                     <input type="text" name="name_dep"class="form-control" placeholder="ชื่อแผนก" required>
                             </div>

@@ -24,36 +24,44 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #d63384;
+  background-color: #0dcaf0;
 }
 </style>
 </head>
 <body>
-
-<div class="container ">
-    <center><div class="col-auto bg-primary">
-        <div class="alert alert-primary" role="alert">
-        <h2>ระบบบันทึกเวลา-เข้าออก</h2>
-    </center >
-<table>
+  <header>
+  <div class="container ">
+    <div class="col-auto bg-primary">
+      <div class="alert alert-primary" role="alert">
+      <center><h2>ระบบบันทึกเวลา-เข้าออก</h2></center >
+      </div>
+    </div>
+  </div>
+  <table>
   <tr>
-    <th>รหัสพนักงาน</th>
-    <th>ชื่อพนักงาน</th>
-    <th>เวลาเข้า</th>
-    <th>เวลาออก</th>
-    <th>menu</th>
+  <center><th>รหัสพนักงาน</th></center>
+  <center> <th>ชื่อพนักงาน</th></center>
+  <center><th>เวลาเข้า</th><center>
+  <center> <th>เวลาออก</th><center>
+  <center> <th>รหัสแผนก</th><center>
+  <center> <th>menu</th><center>
   </tr>
   <?php foreach ($query as $data){?>
-    
-  <tr>
-    <th><?=$data['id_emp']?></th>
-    <th><?=$data['uname']?></th>
-    <th><?=$data['time_in']?></th>
-    <th><?=$data['time_out']?></th>
-    <th><a href="edit_time.php?id=<?=$data['id']?>">Edit and Update</a></th>
-
+    <tr>
+    <center> <th><?=$data['id_emp']?></th></center>
+    <center><th><?=$data['uname']?></th></center>
+    <center><th><?=$data['time_in']?></th></center>
+    <center><th><?=$data['time_out']?></th></center>
+    <center><th><?=$data['id_dep']?></th></center>
+    <th>
+      <br>
+      <br>
+    <center><h2><a href="edit_time.php?id=<?=$data['id']?>">แก้ไข and เพิ่ม</a></h2></center>
+    <center> <a href="delete_time.php?id=<?=$data['id']?>">ลบข้อมูล</a></center>
+    </th>
+  </tr> 
     <?php } ?>
 </table>
-<center><h3><p><a href="home.php">หน้าหลัก</a></p</h3><center>
+<center><h3><p><a href="home.php">หน้าหลัก</a></p</h3></center>
 </body>
 </html>

@@ -5,5 +5,5 @@ CREATE TABLE time_emp (
     uname VARCHAR(200) NOT NULL,
     time_in VARCHAR(100) NOT NULL,
     time_out VARCHAR(100) NOT NULL,
-   	userlevel VARCHAR(1) NOT NULL
+   	id_dep VARCHAR(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -17,13 +17,17 @@
     <title>Admin Page</title>
 
     <link rel="stylesheet" href="style.css">
-    <div class="container ">
-     <center><div class="col-auto bg-primary">
+<div class="container ">
+     <div class="col-auto bg-primary">
         <div class="alert alert-primary" role="alert">
-        <h2>ระบบบันทึกเวลา-เข้าออก</h2>
-
+        <center> <h2>ระบบบันทึกเวลา-เข้าออก</h2></center>
+        </div>
+    </div>
+</div>
+<br>
 </head>
 <body>
+    <header>
 <nav class="navbar navbar-light bg-primary">
     <div class="container-fluid">
         <a class="nav-link " aria-current="page" href="index.php">หน้า login</a>
@@ -40,9 +44,10 @@
             &nbsp;
         <a class="nav-link" href="showtime.php">แสดงข้อมูลเวลา</a>
             &nbsp;
-         
+            <a class="nav-link" href="dep.php">เพิ่มข้อมูลแผนก</a>
             &nbsp;
-        <a class="nav-link" href="logout.php">ออกจากระบบ</a>
+
+       <h4> <a class="nav-link" href="logout.php">ออกจากระบบ</a></h4>
         <br>
     </div>
 </nav>

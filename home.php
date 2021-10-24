@@ -12,31 +12,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
+    <center>
     <div class="container ">
-     <center><div class="col-auto bg-primary">
+      <div class="col-auto bg-primary">
         <div class="alert alert-primary" role="alert">
         <h2>ระบบบันทึกเวลา-เข้าออก</h2>
-</div>
-            <br>
-
-<nav class="navbar navbar-light bg-primary">
-<div class="container-fluid">
-<a class="nav-link " aria-current="page" href="index.php">หน้า login</a>
-&nbsp;
-<a class="nav-link " aria-current="page" href="home.php">หน้าหลัก</a>
-&nbsp;
+        </div>
+      </div>
+    </div>
+    </center>
+</head>
+  <body>
+  <header>
+  
+    <br>
+    <nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+    <a class="nav-link " aria-current="page" href="index.php">หน้า login</a>
+    &nbsp;
+    <a class="nav-link " aria-current="page" href="home.php">หน้าหลัก</a>
+      &nbsp;
     <a class="nav-link " aria-current="page" href="register.php">บันทึกข้อมูลพนักงาน</a>
     &nbsp;
     <a class="nav-link " aria-current="page" href="time_emp.php">บันทึกเวลา</a>
     &nbsp;
     <a class="nav-link" href="show_dep.php">แสดงข้อมูลแผนก</a>
     &nbsp;
+    <a class="nav-link" href="dep.php">เพิ่มข้อมูลแผนก</a>
+    &nbsp;
     <a class="nav-link" href="showtime.php">แสดงข้อมูลเวลา</a>
     &nbsp;
     <a class="nav-link" href="logout.php">ออกจากระบบ</a>
-    
-
+    <br>
+    <nav class="navbar navbar-dark bg-primary">
+  <div class="container-fluid">
+    <form class="d-flex">
+      <input class="form-control me-2" type="show_dep.php" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
+  </div>
+</nav>
+  </form>
   </div>
 </nav>
 </nav>

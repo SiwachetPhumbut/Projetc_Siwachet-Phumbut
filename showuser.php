@@ -33,41 +33,44 @@ td, th {
 }
 
 tr:nth-child(even) {
-  background-color: #d63384;
+  background-color: #fd7e14;
 }
 </style>
 </head>
 <body>
-
-<div class="container ">
-    <center><div class="col-auto bg-primary">
-        <div class="alert alert-primary" role="alert">
-        <h2>ระบบบันทึกเวลา-เข้าออก</h2>
-    </center >
+  <header>
+  <div class="container ">
+    <div class="col-auto bg-primary">
+      <div class="alert alert-primary" role="alert">
+      <center> <h2>ระบบบันทึกเวลา-เข้าออก</h2></center >
+      </div>
+    </div>
+  </div>
 <table>
   <tr>
-    <th>ชื่อผู้ใช้</th>
-    <th>ชื่อจริง</th>
-    <th>นามสกุล</th>
-    <th>อีเมล</th>
-    <th>เบอร์โทร</th>
-    <th>ชื่อแผนก</th>
-    <th>ตำแหน่ง</th>
-    <th>menu</th>
+  <center><th>ชื่อผู้ใช้</th></center>
+  <center> <th>ชื่อจริง</th></center>
+  <center> <th>นามสกุล</th></center>
+  <center><th>อีเมล</th></center>
+  <center> <th>เบอร์โทร</th></center>
+  <center><th>ชื่อแผนก</th></center>
+  <center><th>ตำแหน่ง</th></center>
+  <center> <th>menu</th></center>
   </tr>
   <?php foreach ($query as $data){?>
-    
+
   <tr>
-    <th><?=$data['username']?></th>
-    <th><?=$data['firtname']?></th>
-    <th><?=$data['lastname']?></th>
-    <th><?=$data['email']?></th>
-    <th><?=$data['tel']?></th>
-    <th><?=$data['dep_name']?></th>
-    <th><?=$data['position']?></th>
+  <center><th><?=$data['username']?></th></center>
+  <center><th><?=$data['firstname']?></th></center>
+  <center><th><?=$data['lastname']?></th></center>
+  <center><th><?=$data['email']?></th></center>
+  <center><th><?=$data['tel']?></th></center>
+  <center> <th><?=$data['dep_name']?></th></center>
+  <center><th><?=$data['position']?></th></center>
     <th>
-        <a href="edit_user.php?id=<?=$data['id']?>">แก้ไข and เพิ่ม</a>
-        <a href="delete_user.php?id=<?=$data['id']?>">ลบข้อมูล</a>
+
+    <center> <a href="edit_user.php?id=<?=$data['id']?>">แก้ไข and เพิ่ม</a></center>
+    <center>  <a href="delete_user.php?id=<?=$data['id']?>">ลบข้อมูล</a></center>
     </th>
   </tr>  
     <?php } ?>

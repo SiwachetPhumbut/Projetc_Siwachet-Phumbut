@@ -60,7 +60,7 @@
      <div class="container ">
      <center><div class="col-auto bg-primary">
         <div class="alert alert-primary" role="alert">
-        <h2>ระบบบันทึกเวลา-เข้าออก</h2>
+        <h2>ระบบบันทึกข้อมูลพนักงานใหม่</h2>
 </div>
             </div>
             </center>
@@ -133,6 +133,6 @@
                 </form>
 
 <br>
-        <a href="index.php">กลับสู่ หน้า Login</a>   
+<h3><a href="index.php">กลับสู่ หน้า Login</a></h3>
 </body>
 </html>

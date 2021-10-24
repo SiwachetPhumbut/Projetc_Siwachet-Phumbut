@@ -18,7 +18,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dc3545;
+  border: 1px solid #20c997;
   text-align: left;
   padding: 8px;
 }
@@ -29,27 +29,30 @@ tr:nth-child(even) {
 </style>
 </head>
 <body>
-
-<div class="container ">
-     <center><div class="col-auto bg-primary">
-        <div class="alert alert-primary" role="alert">
-        <h2>ระบบบันทึกเวลา-เข้าออก</h2>
-    </center>
-<table>
- <tr>
-    <th>รหัสแผนก</th>
-    <th>ชื่อแผนก</th>
-    <th>menu</th>
-
-
+  <header>
+  <div class="container ">
+    <div class="col-auto bg-primary">
+      <div class="alert alert-primary" role="alert">
+        <center><h2>ระบบบันทึกเวลา-เข้าออก</h2></center>
+      </div>
+    </div>
+  </div>
+  <table>
+  <tr>
+  <center><th>รหัสแผนก</th></center>
+  <center><th>ชื่อแผนก</th></center>
+  <center><th>menu</th></center>
   </tr>
   <?php foreach ($query as $data){?>
     
   <tr>
-    <th><?=$data['id_dep']?></th>
-    <th><?=$data['name_dep']?></th>
-    <th><a href="edit_dep.php?id=<?=$data['id']?>">Edit and Update</a></th>
-
+  <center><th><?=$data['id_dep']?></th><center>
+  <center><th><?=$data['name_dep']?></th><center>
+    <th>
+    <center> <a href="edit_dep.php?id=<?=$data['id']?>">แก้ไข and เพิ่ม</a></center>
+    <center> <a href="delete_dep.php?id=<?=$data['id']?>">ลบข้อมูล</a></center>
+    </th>
+  </tr>
     
     <?php } ?>
 </table>
